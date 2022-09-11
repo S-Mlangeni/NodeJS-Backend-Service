@@ -1,9 +1,9 @@
-let express = require("express");
-let dotenv = require("dotenv");
+const express = require("express");
+const dotenv = require("dotenv");
 dotenv.config();
-let checkRoutes = require("./routes/checkRoutes");
+const checkRoutes = require("./routes/checkRoutes");
 
-let app = express();
+const app = express();
 
 app.listen(process.env.PORT, () => {
     console.log("Server is running");
