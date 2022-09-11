@@ -1,8 +1,9 @@
-let express = require("express");
-let checkController = require("../controllers/checkController");
+const express = require("express");
+const checkController = require("../controllers/checkController");
 
-let router = express.Router();
+const router = express.Router();
 
 router.post("/watch-video", checkController.watch_check);
+router.post("/close-video", checkController.close_check);
 
 module.exports = router;
